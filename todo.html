@@ -1,12 +1,17 @@
 <body>
   <a href="index.html">HOME</a>
+  <a href="todo.html">TODO</a>
+  <a href="create.html">Create</a>
+  <a href="read.html">Read List</a>
 
+  <h1>TODO - Find by ID</h1>
   <input id="todo_id" />
   <button id="go">Go!</button>
 
   <div id="message"></div>
 </body>
 <script>
+  //MODERN
   async function getToDo1(id) {
     let response = await fetch(
       "https://jsonplaceholder.typicode.com/todos/" + id
